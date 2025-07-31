@@ -7,7 +7,7 @@ const menu = {
 
 function Header() {
     return (
-        <div className="w-screen h-20 flex justify-between items-center gap-15 px-20 fixed border border-black-2">
+        <div className="z-20 w-screen h-20 flex justify-between items-center gap-15 px-20 fixed">
             <div>
                 <Image
                     src="/logo.png"
@@ -17,12 +17,12 @@ function Header() {
                 />
             </div>
             <div className="flex justify-between items-center gap-15">
-                <div className="flex justify-center items-center gap-10">
+                <div className="flex justify-center items-center gap-10 text-white">
                     {
                         menu.page.map((item) => (<p key={item} className="font-bold">{item}</p>))
                     }
                 </div>
-                <div className="flex justify-center items-center gap-5">
+                <div className="flex justify-center items-center gap-5 text-white">
                     {
                         menu.authPage.map((item) => (<p key={item} className="font-bold">{item}</p>))
                     }
