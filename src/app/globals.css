@@ -20,7 +20,17 @@
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  /* background: var(--background); */
+  background: hsla(296, 100%, 6%, 1);
+
+  background: linear-gradient(135deg, hsla(296, 100%, 6%, 1) 48%, hsla(5, 90%, 24%, 1) 85%);
+
+  background: -moz-linear-gradient(135deg, hsla(296, 100%, 6%, 1) 48%, hsla(5, 90%, 24%, 1) 85%);
+
+  background: -webkit-linear-gradient(135deg, hsla(296, 100%, 6%, 1) 48%, hsla(5, 90%, 24%, 1) 85%);
+
+  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#1F0021", endColorstr="#751006", GradientType=1);
+  /* color: var(--foreground); */
+  color: white;
   font-family: Arial, Helvetica, sans-serif;
 }
